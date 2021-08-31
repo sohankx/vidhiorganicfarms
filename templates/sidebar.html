@@ -1,0 +1,77 @@
+{% block sidebar %}
+
+
+<div class="col-sm-5 col-md-3 col-md-pull-9 col-sm-pull-7 pull-off">
+<aside class="sidebar">
+<div class="sidebar-widget">
+<!--<form action="#" role="form">-->
+<!--<div class="input-group">-->
+<!--<input type="text" class="form-control" placeholder="Search">-->
+<!--<span class="input-group-btn">-->
+<!--<button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>-->
+<!--</span>-->
+<!--</div>-->
+<!--</form>-->
+</div>
+<div class="sidebar-widget">
+<h3 class="sidebar-title">Thought of the day</h3>
+<p>To read is to fly: it is to soar to a point of vantage which gives a view over wide terrains of history, human variety, ideas, shared experience and the fruits of many inquiries.</p>
+<ul class="social-icon with-bg rounded mb10">
+<li><a href="https://www.facebook.com/KineticXtech/"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://www.instagram.com/kineticxtechsolutions/"><i class="fa fa-instagram"></i></a></li>
+<li><a href="https://twitter.com/KineticxT"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="https://www.linkedin.com/company/kinetic-x-technologies/"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+</div>
+<div class="sidebar-widget">
+<ul class="nav nav-tabs">
+<li class="active"><a href="#tab1" data-toggle="tab">Latest Posts</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade in active" id="tab1">
+<ul class="latest-posts">
+<li>
+
+<div class="info-post">
+    {% for post in post_list %}
+<h5><a href="blog_single_left.html">{{ post.title }}</a></h5>
+<span>{{ post.created_on}} </span>
+    {% endfor %}
+</div>
+</li>
+
+</ul>
+</div>
+
+</div>
+</div>
+
+<div class="sidebar-widget">
+<h3 class="sidebar-title">Tags</h3>
+<div class="tags">
+<a href="{% url 'CRM' %}" title="10 Topics"><i class="fa fa-tag"></i> CRM</a>
+<a href="{% url 'erp' %}" title="10 Topics"><i class="fa fa-tag"></i> ERP</a>
+<a href="{% url 'HRMS' %}" title="10 Topics"><i class="fa fa-tag"></i> HRMS</a>
+<a href="{% url 'pos' %}" title="10 Topics"><i class="fa fa-tag"></i> POS</a>
+<a href="{% url 'pms' %}" title="10 Topics"><i class="fa fa-tag"></i> PMS</a>
+</div>
+</div>
+<div class="sidebar-widget">
+<h3 class="sidebar-title">Photos</h3>
+<div class="footer-widget xs-text-center">
+!--<ul style="margin-left:-40px;"><a href="{% static 'assets/images/team/karan-sir.jpg' %}"><img src="{% static 'assets/images/team/karan-sir.jpg' %}" style="height: 70px; margin-bottom: 10px;"></a>-->
+<a href="{% static 'assets/images/team/sanjay-sir.jpg' %}"><img src="{% static 'assets/images/team/sanjay-sir.jpg' %}"style="height: 70px;margin-bottom: 10px;"></a>
+<a href="{% static 'assets/images/team/rahul-sir.jpg' %}"><img src="{% static 'assets/images/team/rahul-sir.jpg' %}"style="height: 70px;margin-bottom: 10px;"></a>
+<a href="{% static 'assets/images/team/payal-mam.jpg' %}"><img src="{% static 'assets/images/team/payal-mam.jpg' %}"style="height: 70px;"></a>
+<a href="{% static 'assets/images/team/ritik-verma.jpg' %}"><img src="{% static 'assets/images/team/ritik-verma.jpg' %}"style="height: 70px;"></a>
+<a href="{% static 'assets/images/team/team.jpg' %}"><img src="{% static 'assets/images/team/team.jpg' %}"style="height: 70px;"></a>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+
+{% endblock sidebar %}

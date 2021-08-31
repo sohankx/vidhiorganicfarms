@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Products{% endblock %}
+{% block body_block %}
+
+
+    <!-- Page Title -->
+    <section class="page-title" style="background-image:url(static/assets/images/background/bg-7.jpg)">
+        <div class="auto-container">
+            <h2>Product Details</h2>
+            <ul class="page-breadcrumb">
+                <li><a href="/">home</a></li>
+                <li>Products</li>
+                <li>Product Details</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Shop Single Section-->
+    <section class="shop-single-section">
+        <div class="auto-container">
+
+            <div class="shop-single">
+                <div class="product-details">
+
+                    <!--Basic Details-->
+                    <div class="basic-details">
+                        <div class="row clearfix">
+                            <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                                <figure class="image-box"><a href="{% static 'assets/images/resource/products/9.jpg' %}" class="lightbox-image" title="Image Caption Here"><img src="{% static 'assets/images/resource/products/9.jpg' %}" alt=""></a></figure>
+                            </div>
+                            <div class="info-column col-lg-6 col-md-12 col-sm-12">
+                                <div class="inner-column">
+                                    <h4>Natural Organic Ghee</h4>
+                                    <div class="text"> Vidhi Amrit Farm brings you the finest Desi Gir Cow's hand churned ghee made by Vedic traditional method.</div>
+                                    <!-- <div class="price">Price : <span>$24.5</span></div> -->
+
+                                    <!-- <div class="other-options clearfix">
+                                        <div class="item-quantity"><label class="field-label">Quantity :</label><input class="quantity-spinner" type="text" value="2" name="quantity"></div>
+                                        <button type="button" class="theme-btn cart-btn">Add to cart</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Basic Details-->
+
+                    <!--Product Info Tabs-->
+                    <div class="product-info-tabs">
+                        <!--Product Tabs-->
+                        <div class="prod-tabs tabs-box">
+
+                            <!--Tab Btns-->
+                            <ul class="tab-btns tab-buttons clearfix">
+                                <li data-tab="#prod-details" class="tab-btn active-btn">Milk</li>
+                                <li data-tab="#prod-spec" class="tab-btn">Benefits</li>
+                                <li data-tab="#prod-reviews" class="tab-btn">Prepration</li>
+                            </ul>
+
+                            <!--Tabs Container-->
+                            <div class="tabs-content">
+
+                                <!--Tab / Active Tab-->
+                                <div class="tab active-tab" id="prod-details">
+                                    <div class="content">
+                                        <p>Our milk is naturally procured from cows that graze freely, openly and are raised healthily on a farm. None of our cows are tied up.
+                                            <ul>
+<li>• Milk isn’t forced from the cows and is extracted only after the calf has had sufficient milk.</li>
+<li>• We treat our cows with ayurvedic medicinal herbs, like shankhpushpi, ajwain, shatavari, ashwagandha etc.</li>
+<li>• We give the cows regular neem sprays to keep diseases away from them.</li>
+<li>• We spread limestone on the floors of their sheds, which helps them walk, sit or sleep comfortably.</li>
+<li>• Non-milking cows, calves and bulls are treated the same way as milking cows without any discrimination.</li>
+<li>• We pamper our cows just the way one ought to pamper their own child.</li>
+</p>
+</ul>
+                                    </div>
+                                </div>
+
+                                <!--Tab-->
+                                <div class="tab" id="prod-spec">
+                                    <div class="content">
+                                        <p>Excellent source of OMEGA 3, OMEGA 6, healthy amino acids, Vitamins B2, B12, B6, C, E and K
+
+Sourced from the highest quality A2 milk from Gir Cows.
+
+Natural A2 beta-casein in the milk fulfils nutritional requirements
+
+Easier to digest than A1 milk.
+
+Vedic Bilona-churning technique preserves nutrients
+Experience beauty and good health inside & out.
+
+Boost healthy glowing skin.
+
+Helps to maintain a healthy GUT.
+
+Build Immunity and Improves Digestion.
+
+Ghee by nature lipolytic which break down fat.
+
+Boost Metabolism and Provide instant Energy.
+
+Natural Anti Oxidant.
+
+Reduces Serum Cholesterol.
+
+Best to prevent Heart Blockage.
+
+Treating Asthama.</p>
+                                    </div>
+                                </div>
+
+
+
+
+                                <!--Tab-->
+                                <div class="tab" id="prod-reviews">
+                                    <div class="content">
+                                        <p>Traditional method of making ghee (bilona) is quite elaborate. Cow's milk is boiled and cooled. Then a spoonful of curd is added to this milk and kept at room temperature overnight. The curd is then churned to extract butter from it. This butter is then boiled so that the water evaporates leaving behind pure ghee.<br><ul>
+                                        <li>Step 1 - Fresh, raw, unprocessed A2 milk is boiled for 8-10 hours in earthen stove and converted into curd in a clay pot.</li>
+<li>
+Step 2 - Following a traditional method called “Bilona”, the curd is hand-churned using a wooden churner.</li>
+<li>
+Step 3 - The makkhan (butter) obtained in the process is then separated.</li>
+<li>
+Step 4 - The separated makkhan is then boiled in a thick iron vessel on mild cow dung cake fire.</li></p>
+</ul>
+                                    </div>
+                                </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--End Shop Single Section-->
+ {% endblock %}
+
+
+

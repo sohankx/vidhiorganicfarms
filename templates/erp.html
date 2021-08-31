@@ -1,0 +1,503 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} KineticX Tech Solutions{% endblock %}
+{% block body_block %}
+
+
+
+
+<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+
+<style type="text/css">
+	h2{
+  text-align:center;
+  padding: 20px;
+}
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    text-align: center;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+</style>
+
+
+<header class="titlebar titlebar1">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<h1 class="page-title pull-left">Enterprise Resource Planning</h1>
+</div>
+</div>
+</div>
+</header>
+<section class="about-section">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<h3 class="section-title">ERP streamlines operations and integrate multiple systems into one.</h3>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4 col-md-3">
+<img src="{% static 'assets/images/demo/erpimage2.jpg' %}">
+</div>
+<div class="col-sm-7 col-md-5 xs-box">
+<h3 class="box-title"></h3>
+<p><font color="black">BusinessX’s intelligent ERP solutions are the Digital Core that enable businesses to integrate end-to-end cross functional next generation business processes so that companies can become intelligent. Everyone has access to what they need, regardless of which business function they’re working to perform hence saving time and money in he process resulting in profits.</font></p>
+<ul class="social-icon dark-2 rounded pull-left">
+<li><a href="https://www.facebook.com/KineticXtech/"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://www.instagram.com/kineticxtechsolutions/"><i class="fa fa-instagram"></i></a></li>
+<li><a href="https://twitter.com/KineticxT"><i class="fa fa-twitter"></i></a></li>
+<!--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+<li><a href="https://www.linkedin.com/company/kinetic-x-technologies/"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+</div>
+<div class="hidden-sm col-md-4">
+<h3 class="box-title">How much erp integration helps your business?</h3>
+<div class="progress no-animation">
+<div class="progress-bar" role="progressbar" data-percentage="59">
+<span><i class="fa fa-wordpress"></i>Sales 59%</span>
+</div>
+</div>
+<div class="progress no-animation">
+<div class="progress-bar" role="progressbar" data-percentage="30">
+<span><i class="fa fa-drupal"></i>Revenue 20%</span>
+</div>
+</div>
+<div class="progress no-animation">
+<div class="progress-bar" role="progressbar" data-percentage="50">
+<span><i class="fa fa-html5"></i>Expenses cut 50%</span>
+</div>
+</div>
+<div class="progress no-animation">
+<div class="progress-bar" role="progressbar" data-percentage="32">
+<span><i class="fa fa-joomla"></i>ROI 22%</span>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</section> 
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="divider d2 d4"><span><i class="fa fa-ellipsis-h"></i></span></div>
+</div>
+</div>
+</div>
+<section class="section">
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-md-3 sm-box">
+<div class="box-content">
+<img src="{% static 'assets/images/icons/full-color/128px/swatches.png' %}" alt="">
+<h3 class="box-tile"><b>Reduced Operational Costs</b></h3><br>
+<p style="text-align:justify;">Systems like ERP allow you to merge processes across departments, so you can more easily identify and anticipate problems. This also means you’ll be able to come up with ways to resolve those issues faster, so any disruptions or delays in your business do less damage to your company reputation and minimize losses.</p>
+</div>
+</div>
+<div class="col-sm-6 col-md-3 sm-box">
+<div class="box-content">
+<img src="{% static 'assets/images/icons/full-color/128px/brush-pencil.png' %}" alt="">
+<h3 class="box-tile"><b>Improved Productivity and Efficiency</b></h3>
+<p style="text-align:justify;">The businessX ERP software helps  automating a variety of tasks such as updating inventor, compiling reports, and monitoring sales. This saves time, allowing you to focus on other areas of your business resulting in reduced human error.</p>
+</div>
+</div>
+<div class="col-sm-6 col-md-3 xs-box">
+<div class="box-content">
+<img src="{% static 'assets/images/icons/full-color/128px/check.png' %}" alt="">
+<h3 class="box-tile"><b>More Accurate Reporting</b></h3><br>
+<p style="text-align:justify;">Data is critical to businesses as it shows you where you are, where you’ve been, and can project where you could be if you remain on the current path or make adjustments. The ERP areas of business intelligence and analytics can provide insights to help you keep your business on the right track, making adjustments where necessary so you can optimize business performance.</p>
+</div>
+</div>
+<div class="col-sm-6 col-md-3">
+<div class="box-content">
+<img src="{% static 'assets/images/icons/full-color/128px/stack.png' %}" alt="">
+<h3 class="box-tile"><b>Streamlined Regulatory Compliance</b></h3>
+<p style="text-align:justify;">Industry standards change and remaining compliant can be an issue for businesses across a number of industries. Many ERP systems include compliance reporting features to keep track of changes in compliance protocols and update you in real-time.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section-3 section-dark mb0">
+<div class="container">
+<div class="row">
+<div class="col-sm-10 col-sm-offset-1">
+<div class="text-center" style="font-size: 24px;">
+<p class="mb0"><i>“Choosing and implementing an ERP takes time and planning. But, regardless of company size or industry, there’s a solution out there that could work for you.”</i></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section-3 section-gray mt0" style="
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 00px;
+">
+<div class="container">
+<div class="row mt10">
+<div class="col-sm-12 sm-box" style="text-align: center;">
+<h3 class="box-title"><b>FInd The Solution That Meets Your Expectations.</b></h3>
+<p>We have for you the perfect balance of domain experts with expert-level knowledge of specific areas like computer vision, e-commerce, marketing automation, collaboration solutions, knowledge management, data analytics, CRM & CXM solutions, cybersecurity and generalists who can convert their knowledge from different areas into new creative solutions.</p>
+
+</div>
+</div>
+</section>
+
+
+<style type="text/css">
+	
+
+.erp_module h2 {
+  text-align:center;
+	padding-bottom: 1em;
+}
+
+.erp_module .slick-dots {
+	text-align: center;
+  margin: 0 0 10px 0 !important;
+  padding: 0;
+  
+}
+.erp_module li {
+    display:inline-block !important;
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+    &.slick-active {
+      button {
+        background-color:black !important;
+      }
+    }
+.erp_module button {
+      font: 0/0 a !important;
+      text-shadow: none !important;
+      color: transparent !important;
+      background-color:#999 !important;
+      border:none !important;
+      width: 15px !important;
+      height: 15px !important;
+      border-radius:50% !important;
+    }
+		:hover{
+			background-color: black !important;
+		}
+  }
+/* Custom Arrow */
+.erp_module .prev{
+	color: #999;
+	position: absolute !important;
+	top: 38% !important;
+	left: -2em !important;
+	font-size: 1.5em !important;
+		:hover{
+			cursor: pointer !important;
+			color: black !important;
+		}
+}
+.erp_module .next{
+	color: #999 !important;
+	position: absolute !important;
+	top: 38% !important;
+	right: -2em !important;
+	font-size: 1.5em !important;
+	:hover{
+			cursor: pointer !important;
+			color: black !important;
+		}
+}
+
+@media screen and (max-width: 800px) {
+    .erp_module .next {
+        display: none !important;
+    }
+}
+</style>
+<div class="container erp_module">
+  <h2><b>ERP Modules</b></h2>
+    <div class="row">
+      <div class="col-md-12 heroSlider-fixed">
+        <div class="overlay">
+      </div>
+         <!-- Slider -->
+        <div class="slider responsive">
+          <div>
+						<img src="{% static 'assets/images/demo/inven.jpg' %}" alt="project">
+						<h3 class="portfolio-info-title heig">Inventory management</h3>
+<p class="portfolio-info-text">Also known as material management, inventory modules help with measuring stock targets, standardizing replenishments, and tracking items in your organization with serial numbers.</p>
+					</div>
+					<div>
+						<img src="{% static 'assets/images/demo/Purchasing.jpg' %}" alt="project">
+						<h3 class="portfolio-info-title heig">Purchasing</h3>
+<p class="portfolio-info-text">These modules manage procurement processes and work closely with inventory and SCM modules.It also manages ongoing supplier relationships and the transactional purchasing of goods and services, working with accounts payable to complete the source-to-settle cycle by processing supplier invoices for payment.</p>
+					</div>
+					<div>
+						<img src="{% static 'assets/images/demo/SalesandMarketing.png' %}" alt="project">
+						<h3 class="portfolio-info-title heig">Sales and Marketing</h3>
+<p class="portfolio-info-text">These modules handle sales workflows, ranging from inquiries and quotes to sales orders and invoicing. With more advanced implementations, it’s also possible to track shipments and integrate tax rules. This works closely with CRM modules to speed the sales cycle to generate more profit.</p>
+					</div>
+					<div>
+						<img src="{% static 'assets/images/demo/new1.jpg' %}" alt="project">
+						<h3 class="portfolio-info-title heig">Manufacturing</h3>
+<p class="portfolio-info-text"> Also referred to as Production or Engineering, this module aims to make manufacturing more efficient. It features product planning and forecasting, daily production monitoring, and more. It is integrated with SCM and inventory modules.</p>
+					</div>
+					<div>
+						<img src="{% static 'assets/images/demo/new2.jpg' %}" alt="project">
+						<h3 class="portfolio-info-title heig">Financial management</h3>
+<p class="text-center mb0"> This module manages capital, allowing you to more easily see the money coming into and going out of the business. It addresses standard accounting transactions including expenditures, balance sheet, tax management, bank reconciliation and more. It can also generate financial reports for any department.</p>
+					</div>
+					<div>
+						<img src="{% static 'assets/images/demo/new3.jpg' %}" alt="project">
+						<h3 class="portfolio-info-title heig">Customer relationship management (CRM)</h3>
+<p class="text-center mb0"> This module aims to improve customer service and profit per capita. It manages leads, customer issues, and customer opportunities. In an ERP setup, it works closely with the sales module to speed up conversions.</p>
+					</div>
+					<div>
+						<img src="{% static 'assets/images/demo/new4.jpg' %}" alt="project">
+						<h3 class="portfolio-info-title heig">Supply chain management (SCM)</h3>
+<p class="text-center mb0"> This module addresses your supply chain, including areas such as purchase order management, process automation, and production flow from production to consumer, and back again in the case of recalls or returns.</p>
+					</div>
+					<div>
+						<img src="{% static 'assets/images/demo/new5.jpg' %}" alt="project">
+						<h3 class="portfolio-info-title heig">Human resource management (HRM)</h3>
+<p class="text-center mb0"> This addresses your staff and includes things like time sheets, employee records, performance reviews, payroll systems, and job profiles.</p>
+					</div>
+					<div>
+						<img src="{% static 'assets/images/demo/new6.jpg' %}" alt="project">
+						<h3 class="portfolio-info-title heig">Automated reporting</h3>
+<p class="portfolio-info-text">These modules work with others to make reporting easy across all departments. Staff will no longer spend time pulling reports from each system.</p>
+					</div>
+					<div>
+						<img src="{% static 'assets/images/demo/new7.jpg' %}" alt="project">
+						<h3 class="portfolio-info-title heig">Business intelligence (BI)</h3>
+<p class="portfolio-info-text">These modules make it easier to use business intelligence to make data-driven decisions for the future of the company. Typically, you’ll only find BI modules in large ERP packages.</p>
+					</div>
+					<div>
+						<img src="{% static 'assets/images/demo/new8.jpg' %}" alt="project">
+						<h3 class="portfolio-info-title heig">Project Management</h3>
+<p class="portfolio-info-text"> This module connects project activities with company financials to make it easy to report on the success or failure of projects. Use it to see how well you’re working on completing projects on time and on budget.</p>
+					</div>
+					<div>
+						<img src="{% static 'assets/images/demo/new9.jpg' %}" alt="project">
+						<h3 class="portfolio-info-title heig">Compliance monitoring</h3>
+<p class="text-center mb0"> This module works to make sure your business stays in compliance with industry regulations. It addresses compliance with local law, security measures, and documentation requirements.</p>
+					</div>
+					<div>
+						<img src="{% static 'assets/images/demo/new10.jpg' %}" alt="project">
+						<h3 class="portfolio-info-title heig">IT optimization</h3>
+<p class="text-center mb0">This module works to optimize your IT structure, to keep systems running smoothly.</p>
+					</div>
+					<div>
+						<img src="{% static 'assets/images/demo/new11.jpg' %}" alt="project">
+						<h3 class="portfolio-info-title heig">Asset management</h3>
+<p class="text-center mb0"> This module aims to manage your physical assets, such as your building, manufacturing equipment, and more.</p>
+					</div>
+					<div>
+						<img src="{% static 'assets/images/demo/new12.jpg' %}" alt="project">
+						<h3 class="portfolio-info-title heig">E-commerce</h3>
+<p class="text-center mb0">This module integrates the management of multiple online sales channels with other areas of your ERP.</p>
+					</div>
+        </div>
+				 <!-- control arrows -->
+				<div class="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				</div>
+				<div class="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				</div>
+				
+      </div>
+    </div>
+  </div>
+
+
+<section class="section-3 custom-section cs2" style="
+    margin-bottom: 00px;
+    margin-top: 00px;
+">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 animated" data-anim="bounceIn">
+<h2 class="section-title">Find out more about us</h2>
+<ul class="social-icon dark-2 rounded pull-right" style="margin-right: 500px;">
+<li><a href="https://www.facebook.com/KineticXtech/"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://www.instagram.com/kineticxtechsolutions/"><i class="fa fa-instagram"></i></a></li>
+<li><a href="https://twitter.com/KineticxT"><i class="fa fa-twitter"></i></a></li>
+
+<li><a href="https://www.linkedin.com/company/kinetic-x-technologies/"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+</div>
+</div>
+</div> 
+</section> 
+
+
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
+<!--<script src="{% static 'assets/_demo/rs-slider.js' %}"></script>-->
+<!--<div id="_include_main_plugins"></div>-->
+<!--<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>-->
+
+
+<!--<script src="{% static 'assets/js/script.js' %}"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script type="text/javascript">
+	$('.responsive').slick({
+  dots: true,
+	prevArrow: $('.prev'),
+	nextArrow: $('.next'),
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+</script>
+{% endblock %}

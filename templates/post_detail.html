@@ -1,0 +1,71 @@
+{% extends "index1.html" %} {% load static %} 
+{% load bootstrap4 %}
+{% load i18n %}
+{% block content %}
+
+
+    <!-- Page Title -->
+    <section class="page-title" style="background-image:url( '{% static 'assets/images/background/bg-7.jpg' %}')">
+        <div class="auto-container">
+            <h2>Product Details</h2>
+            <ul class="page-breadcrumb">
+                <li><a href="index-2.html">home</a></li>
+                <li>Products</li>
+                <li>Product Details</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Shop Single Section-->
+    <section class="shop-single-section">
+        <div class="auto-container">
+
+            <div class="shop-single">
+                <div class="product-details">
+
+                    <!--Basic Details-->
+                    <div class="basic-details">
+                        <div class="row clearfix">
+                            <div class=" col-lg-6 col-md-12 col-sm-12">
+                                  {% if post.picture %}
+                                <figure ><a href="{% url 'post_detail' post.slug  %}"  title="Image Caption Here"><img src="{{ post.picture.url}}" alt="{{ post.title }}"></a></figure>
+                           {% endif %}
+                            </div>
+                            <div class="info-column col-lg-6 col-md-12 col-sm-12">
+                                <div class="inner-column">
+                                    <h4> {{ object.title }}</h4>
+                                    <div class="text">{{ object.content | safe }} </div>
+                                    <div class="price">Price : <span>&#8377; {{ post.price }}</span></div>
+
+                                    <div class="other-options clearfix">
+<!--                                        <div class="item-quantity"><label class="field-label">Quantity :</label><input class="quantity-spinner" type="text" value="2" name="quantity"></div>-->
+                                        <button type="button" class="theme-btn cart-btn">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Basic Details-->
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--End Shop Single Section-->
+
+
+
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+
+
+
+{% endblock content %}

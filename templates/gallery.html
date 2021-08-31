@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About Us{% endblock %}
+{% block body_block %}
+
+
+
+    <!-- Page Title -->
+    <section class="page-title" style="background-image:url(static/assets/images/background/bg-7.jpg)">
+        <div class="auto-container">
+            <h2>Our Gallery</h2>
+            <ul class="page-breadcrumb">
+                <li><a href="/">home</a></li>
+                <li>About Us</li>
+                <li>Our Gallery</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section style-two">
+        <div class="auto-container">
+            <div class="row">
+				{% for gallery in gallery %}
+                <div class="col-lg-4 col-md-6 gallery-block">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{ gallery.picture.url}}" alt="{{ gallery.title }}">
+                        </div>
+                        <div class="overlay">
+                            <div class="zoom-btn"><a href="{{ gallery.picture.url}}" class="lightbox-image" data-fancybox="gallery"><img src="{{ gallery.picture.url}}" alt="{{ gallery.title }}"></a></div>
+                            <h4><span>Zoom</span></h4>
+                        </div>
+                    </div>
+                </div>{% endfor %}
+
+            </div>
+        </div>
+    </section>
+
+ {% endblock %}

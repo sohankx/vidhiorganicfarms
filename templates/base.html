@@ -1,0 +1,292 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Vidhi Amrit</title>
+<!-- Stylesheets -->
+<link href="{% static 'assets/css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+<!-- Responsive File -->
+<link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet">
+<!-- Color File -->
+<link href="{% static 'assets/css/color.css' %}" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="{% static 'assets/images/favicon.png' %}" type="image/x-icon">
+<link rel="icon" href="{% static 'assets/images/favicon.png' %}" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+<!--  <div class="loader-wrap">-->
+<!--        <div class="preloader"><div class="preloader-close">Preloader Close</div></div>-->
+<!--        <div class="layer layer-one"><span class="overlay"></span></div>-->
+<!--        <div class="layer layer-two"><span class="overlay"></span></div>-->
+<!--        <div class="layer layer-three"><span class="overlay"></span></div>-->
+<!--    </div>-->
+
+    <!-- Main Header -->
+    <header class="main-header header-style-one">
+
+        <!-- Header Upper -->
+        <div class="header-upper">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <!--Logo-->
+                    <div class="logo-box">
+                        <div class="logo"><a href="index-2.html"><img src="{% static 'assets/images/logo.png' %}" alt=""></a></div>
+                    </div>
+                 <div class="contact-info">
+                        <div class="single-info">
+                            <div class="icon"><span class="flaticon-null-1"></span></div>
+                            <div class="text">vidhi goshwardhan gaushala<br>nohar-335523 Distt. Hanumanghar<br>Rajasthan</div>
+                        </div>
+                        <div class="single-info">
+                            <div class="icon"><span class="flaticon-null-2"></span></div>
+                            <h5><a href="tel:9509800003">(+91)9509800003</a> <br>Call us</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+
+        <!-- Main Menu -->
+        <div class="main-menu">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <span class="border-shape"></span>
+                    <!--Nav Box-->
+                    <div class="nav-outer">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler"><img src="{% static 'assets/images/icons/icon-bar.png' %}" alt=""></div>
+
+                        <!-- Main Menu -->
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation">
+                                    <li class="dropdown"><a href="/">Home </a>
+
+                                    </li>
+                                    <li class="dropdown"><a href="{% url 'page_about_us' %}">About Us</a>
+
+                                    </li>
+                                    <li class="dropdown"><a href="{% url 'products' %}">Products</a>
+
+                                    </li>
+                                    <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                                    <li><a href="{% url 'page_contact' %}">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                        <button type="button" class="theme-btn "><span class="stroke-gap-icon"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sticky Header  -->
+        <div class="sticky-header main-menu">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <div class="nav-outer">
+                        <span class="border-shape"></span>
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <!--Keep This Empty / Menu will come through Javascript-->
+                        </nav><!-- Main Menu End-->
+                        <!-- Main Menu End-->
+                        <button type="button" class="theme-btn "><span class="stroke-gap-icon "></span></button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Sticky Menu -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon flaticon-remove"></span></div>
+
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="/"><img src="{% static 'assets/images/logo-three.png' %}" alt="" title=""></a></div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+				<!--Social Links-->
+				<div class="social-links">
+					<ul class="clearfix">
+						<li><a href="#"><span class="fab fa-twitter"></span></a></li>
+						<li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+						<li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+						<li><a href="#"><span class="fab fa-instagram"></span></a></li>
+						<li><a href="#"><span class="fab fa-youtube"></span></a></li>
+					</ul>
+                </div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+        <div class="nav-overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div>
+    </header>
+    <!-- End Main Header -->
+
+    <!--Search Popup-->
+<!--    <div id="search-popup" class="search-popup">-->
+<!--        <div class="close-search theme-btn"><span class="flaticon-remove"></span></div>-->
+<!--        <div class="popup-inner">-->
+<!--            <div class="overlay-layer"></div>-->
+<!--            <div class="search-form">-->
+<!--                <form method="post" action="http://html.tonatheme.com/2020/Hankcok/index.html">-->
+<!--                    <div class="form-group">-->
+<!--                        <fieldset>-->
+<!--                            <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >-->
+<!--                            <input type="submit" value="Search Now!" class="theme-btn">-->
+<!--                        </fieldset>-->
+<!--                    </div>-->
+<!--                </form>-->
+<!--                <br>-->
+<!--                <h3>Recent Search Keywords</h3>-->
+<!--                <ul class="recent-searches">-->
+<!--                    <li><a href="#">Finance</a></li>-->
+<!--                    <li><a href="#">Idea</a></li>-->
+<!--                    <li><a href="#">Service</a></li>-->
+<!--                    <li><a href="#">Growth</a></li>-->
+<!--                    <li><a href="#">Plan</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--        </div>-->
+<!--    </div>-->
+
+
+
+
+            {% block body_block %}{% endblock %}
+
+   <!-- Main Footer -->
+    <footer class="main-footer" style="background-image: url(assets/images/background/bg-6.jpg);">
+        <div class="auto-container">
+            <!--Widgets Section-->
+            <div class="widgets-section">
+                <div class="row clearfix">
+
+                    <!--Column-->
+                    <div class="column col-lg-4">
+                        <div class="widget about-widget">
+                            <div class="logo"><a href="index-2.html"><img src="{% static 'assets/images/logo.png' %}" alt=""></a></div>
+                                     <div class="text">Vidhi Goshwardhan Gaushala<br>Nohar-335523 Distt. Hanumanghar<br>Rajasthan</div>
+                            <h5>Email </h5>
+                            <h4><a href="mailto:">ankitrania5@gmail.com</a></h4>
+                            <br>
+                            <h5>Call Us </h5>
+                            <h4><a href="tel:9509800003">(+91)9509800003</a></h4>
+                        </div>
+                    </div>
+
+                    <!--Column-->
+                    <div class="column col-lg-4">
+                        <div class="footer-widget links-widget">
+                            <h3 class="widget-title">Useful Links</h3>
+                            <div class="widget-content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="{% url 'page_about_us' %}">About Us</a></li>
+                                            <li><a href="{% url 'products' %}">Products</a></li>
+                                            <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                                            <li><a href="{% url 'page_contact' %}">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="col-md-6">
+                                        <ul>
+                                            <li><a href="#">Meet Our Farmers</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Latest Blogs</a></li>
+                                            <li><a href="#">Faq</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                        </ul>
+                                    </div> -->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Column-->
+                    <div class="column col-lg-4">
+                        <div class="footer-widget newsletter-widget">
+                            <h3 class="widget-title">Get In Touch</h3>
+                            <div class="widget-content">
+                                <div class="hint"></div>
+<!--                                <form action="#">-->
+<!--                                    <input type="email" placeholder="Enter your email address">-->
+<!--                                    <button type="submit"><i class="fa fa-paper-plane"></i></button>-->
+<!--                                </form>-->
+                                <div class="social-links">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="auto-container">
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <div class="row m-0 justify-content-between">
+                        <div class="text">© Copyright  <a href="#">Vidhi Amrit Farm</a> . All right reserved.</div>
+                        <div class="text">Created by <a href="https://infinityxlab.com/">Infinity Creative Lab</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="flaticon-right-arrow"></span></div>
+
+<script src="{% static 'assets/js/jquery.js' %}"></script>
+<script src="{% static 'assets/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'assets/js/isotope.js' %}"></script>
+<script src="{% static 'assets/js/owl.js' %}"></script>
+<script src="{% static 'assets/js/appear.js' %}"></script>
+<script src="{% static 'assets/js/wow.js' %}"></script>
+<script src="{% static 'assets/js/lazyload.js' %}"></script>
+<script src="{% static 'assets/js/scrollbar.js' %}"></script>
+<script src="{% static 'assets/js/TweenMax.min.js' %}"></script>
+<script src="{% static 'assets/js/swiper.min.js' %}"></script>
+
+<script src="{% static 'assets/js/script.js' %}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1113 @@
+   {% extends 'base.html' %}
+{% load static %}
+{% block title %} Home{% endblock %}
+{% block body_block %}
+
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="{% static 'assets2/css/procurement.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+
+    
+
+<div class="cybersecurity-hero processing-hero-bg__color ">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <!--baseline-->
+                    <div class="col-lg-6 col-md-7">
+                        <div class="cybersecurity-hero-text wow move-up">
+                            <!-- <h6>figure plans out </h6> -->
+                            <h1 class="font-weight--reguler mb-30">Procu<span class="text-color-primary">rement</span></h1>
+                            <div class="hero-button mt-30">
+                                <!-- <a href="#" class="ht-btn ht-btn-md">Dig deeper now </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="cybersecurity-hero-images-wrap wow move-up">
+                            <div class="cybersecurity-hero-images section-space--mt_80">
+                             <div class="inner-img-one">
+                                    <img class="img-fluid worldRotate" src="{% static 'images\hero\mitech-slider-cybersecurity-global-image.png' %}" alt="">
+                                </div>
+                                <div class="inner-img-two">
+                                    <img class="img-fluid  ml-5 " src="{% static 'assets2/img/blog/procurement1.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***** Breadcrumb Area Start ***** -->
+<!--        <section class="section breadcrumb-area overlay-white d-flex align-items-center">-->
+<!--            <div class="container">-->
+<!--                <div class="row justify-content-center">-->
+<!--                    <div class="col-12 col-md-10 col-lg-8">-->
+<!--                        &lt;!&ndash; Section Heading &ndash;&gt;-->
+<!--                        <div class="section-heading mb-0 text-center">-->
+<!--                            <h1 class="text-white">Procurement</h1>-->
+<!--                            -->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+        <!-- ***** Breadcrumb Area End ***** -->
+
+        <!-- ***** Single Service Area Start ***** -->
+        <section id="blog" class="section blog-area ptb_100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <aside class="sidebar">
+                            <!-- Single Widget -->
+                            <div class="single-widget">
+                                <!-- Category Widget -->
+                                <div class="accordions widget catagory-widget" id="cat-accordion">
+                                    <div class="single-accordion blog-accordion">
+                                        <h3>
+                                            <a role="button" class="collapse show d-block p-3" data-toggle="collapse" href="#accordion1">Our Modules
+                                            </a>
+                                        </h3>
+                                        <!-- Category Widget Content -->
+                                        <div id="accordion1" class="accordion-content widget-content collapse show" data-parent="#cat-accordion">
+                                            <!-- Category Widget Items -->
+                                             <ul class="widget-items">
+                                                <li><a href="{% url 'accounts' %}"class="d-flex p-3"><span>Accounting & Financial Management</span></a></li>
+                                                <li><a href="{% url 'assets' %}" class="d-flex p-3"><span>Asset Management</span></a></li>
+                                                <li><a href="{% url 'CRM' %}" class="d-flex p-3"><span>CRM</span></a></li>
+                                                <li><a href="{% url 'HRMS' %}" class="d-flex p-3"><span>Human Resource Management</span></a></li>
+                                                <li><a href="{% url 'procurement' %}" class="active d-flex p-3"><span>Procurement</span></a></li>
+                                                <li><a href="{% url 'production' %}" class="d-flex p-3"><span>Production</span></a></li>
+                                                <li><a href="{% url 'pms' %}" class="d-flex p-3"><span>Project Management</span></a></li>
+                                                <li><a href="{% url 'selling' %}" class="d-flex p-3"><span>Selling</span></a></li>
+                                                <li><a href="{% url 'stock_inventory' %}" class="d-flex p-3"><span>Stock & Inventory</span></a></li>
+                                                <li><a href="{% url 'support' %}" class="  d-flex p-3"><span>Support</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                           <div class="container123">
+  <img src="static/assets2/img/bg/Untitled-1.png"style="width:100%;">
+  <div class="centered"><a href="tel:09910800059" class="hover-style-link">(+91) 9910800059</a></div>
+  <div class="centered1"><a href="tel:09871246500" class="hover-style-link">(+91)9871246500</a></div>
+  <div class="centered2"><a href="mailto: sales@thebusinessx.com" class="hover-style-link">sales@thebusinessx.com</a></div>
+  <!-- <div class="centered3"><a href="mailto: sgandhi@kineticxtech.com" class="hover-style-link">sgandhi@kineticxtech.com</a></div> -->
+  <div class="centered4"><button style="
+    border-radius: 28px;
+    width: 200px;
+    border: 0px;
+    height: 46px;
+"><font color="black"><a href="{% url 'sending_mail' %}">Reach Us</a></font></button></div>
+</div>
+                            <!-- Advertise -->
+                           <!--  <div class="advertise-img">
+                                    <a href="contact-us.html"><img src="assets2/img/bg/Untitled-1.png" alt="">
+                                </div></a> -->
+                            <!-- Single Widget -->
+                            <div class="single-widget">
+                                <!-- Tags Widget -->
+                                <div class="accordions widget tags-widget" id="tags-accordion">
+                                    <div class="single-accordion blog-accordion">
+                                        <h5>
+                                            <a role="button" class="collapse show text-uppercase d-block p-3" data-toggle="collapse" href="#accordion3">Industries
+                                            </a>
+                                        </h5>
+                                        <!-- Tags Widget Content -->
+                                        <div id="accordion3" class="accordion-content widget-content collapse show" data-parent="#tags-accordion">
+                                            <!-- Tags Widget Items -->
+                                            <div class="widget-content tags-widget-items pt-2">
+                                                <a href="{% url 'coming_soon' %}" class="d-inline-block mt-2 mr-1 px-2 py-1">Manufacturing</a>
+                                                <a href="{% url 'coming_soon' %}" class="d-inline-block mt-2 mr-1 px-2 py-1">Real Estate</a>
+                                                <a href="{% url 'coming_soon' %}" class="d-inline-block mt-2 mr-1 px-2 py-1">Construction</a>
+                                                <a href="{% url 'coming_soon' %}" class="d-inline-block mt-2 mr-1 px-2 py-1">Retail</a>
+                                                <a href="{% url 'coming_soon' %}" class="d-inline-block mt-2 mr-1 px-2 py-1">Service</a>
+                                                <a href="{% url 'coming_soon' %}" class="d-inline-block mt-2 mr-1 px-2 py-1">Textile & Home Furnishing</a>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-12 col-lg-9 pl-lg-5">
+                        <!-- Service Details -->
+                        <article class="service-details">
+                            <div class="service-text mb-4">
+                                <h2 class="mb-3">Service Details</h2>
+                                <p>Today’s approach in the latest technology is transforming traditional business patterns by disorder supply markets, changing customer's buying order, and adding more complexity to the chain. Procurement departments must respond by absorbing a more strategic role altogether of the activities surrounding purchasing.<br><br> 
+
+Disorganized procurement management may be some way of life for too many organizations. The most common reason behind this disorganized management is the use of manual and paper-intensive procurement practices followed by organizations. The manual procurement process consists of high processing costs, chances of loss of documents, sleepy approval cycles, misled discounts, and uncontrolled costs. Also, the supplier relationships are on hazard because of late payments, poor vendor management, inefficient dispute resolutions, and lots more.<br><br>
+
+By using <b><font color="black">Business</font><font color="red">X</font></b> procurement management system,  equip your business and process with modern technology. With features like selecting and onboarding new suppliers, supplier scorecard, dynamic discounting, updating annual vendor qualifications, standardizing agreements & contracts, streamline requisitions, automated material requests, purchase orders, purchase receipts and purchase invoices 
+transform the procurement process with <b><font color="black">Business</font><font color="red">X</font></b>, and allow your department to provide fast and user-friendly procurement services.</p>
+                            </div>
+
+
+
+                            <div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'assets2/img/blog/blog-5.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'assets2/img/blog/blog-4.jpg' %}" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="{% static 'assets2/img/blog/blog-3.jpg' %}" style="width:100%">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+                            <!-- Service Thumb -->
+                            <!-- <div class="service-thumb">
+                                <a href="#"><img src="assets2/img/blog/blog-5.jpg" alt=""></a>
+                            </div> -->
+                            <!-- Service Content -->
+
+                            <div class="service-content">
+
+                                <div class="service-features pt-5">
+                                    <!-- Service List -->
+                                    <h3>Features</h3>
+                                    <div class="row">
+                                    <div class="col-sm-4"><div class="service-list my-4">
+                                        
+                                        <ul class="mt-3">
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                        Product Masters
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                        Product Bundles
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                        Multiple Price list
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                        Product Grouping
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                        Product Variants
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                         Image Gallery
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                        Product Wise Taxation
+ 
+ 
+ 
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div></div>
+                                        <div class="col-sm-4"><div class="service-list my-4">
+                                        <h3></h3>
+                                        <ul class="mt-3">
+                                            
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                       Barcode
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                       QR Code
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                        Serialized & Batch Inventory
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                        Fifo
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                         Moving Average
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                        Lifo 
+                                                    </div>
+                                                </div>
+                                            </li>
+                                             <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                        Warehouse management
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div></div>
+                                        <div class="col-sm-4"><div class="service-list my-4">
+                                        <h3></h3>
+                                        <ul class="mt-3">
+                                            
+                                            
+                                           
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                        Supply chain management
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                        Quality checks
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                        Auto Material requests
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                         Material Movement
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                          Raw Material Management
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="my-1">
+                                                <div class="media align-items-center">
+                                                    <i class="fas fa-check color-primary mr-3"></i>
+                                                    <div class="media-body">
+                                                        Reports and Analytics
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div></div>
+                                    </div><!-- End Row -->
+                                    
+                                    <h3>Reports & Analytics</h3>
+                                    <p class="mt-3 mb-4">To manage the business an organization requires access to in-depth, real-time data to assist in improving decisions. <b><font color="black">Business</font><font color="red">X</font></b> ERP provides you with dynamic reporting with drill-down access into standard inquiries. Our industry-specific tools facilitate that you get the foundation explanation for business performance through time-based ratio and cash-flow analysis.<br><br>
+
+<b><font color="black">Business</font><font color="red">X</font></b> ERP provides quick access to top-level information and original documentation. Our dynamic reporting provides access to the info you would like to research performance at all the levels of the operation. <b><font color="black">Business</font><font color="red">X</font></b> ERP provides detailed analysis with the help of Machine Learning (<b><font color="black">ML</font></b>) and Business Intelligence (<b><font color="black">BI</font></b>). Whereas Machine Learning (<b><font color="black">ML</font></b>) is used to actively learn from imported and gathered data, in a way as people would use past experiences as a part of their process to plan a better strategy for the organization.<br><br>
+
+Business intelligence (<b><font color="black">BI</font></b>), on the other side, is a complex sphere representing a process that depends on automation to cumulate, store and analyze business-related data. The goal of BI is to succeed in optimal courses of action in a short time as possible, therefore the process includes several different aspects, like analytics, predictive modelling, performance management, data processing, etc.</p>
+                                   <div class="row">
+                                        <div class="col-12 col-md-6 res-margin mb-lg-4">
+                                            <!-- Single Service Features -->
+                                            <div class="single-service-features media">
+                                                <!-- Feature Image -->
+                                                <!-- Features Text -->
+                                                <div class="features-text">
+                                                    <h3 class="mb-2">Reports</h3>
+                                                     <p>Pending Material Requests </p>
+                                                    <p>Material Requests for Which Purchase Orders are not Created</p>
+                                                    <p>Comparative Supplier Quotation Report </p>
+                                                    <p>Open Purchase orders</p>
+                                                    <p>Material Pending Quantity in Purchase Orders </p>
+                                                    <p>Item Wise Purchase History </p>
+                                                    <p>Purchase Invoice Report</p>
+                                                    <p>Accounts Payable with Ageing </p>
+                                                    <p>Supplier Address and Contact Report</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 res-margin mb-lg-4">
+                                            <!-- Single Service Features -->
+                                            <div class="single-service-features media">
+                                                <!-- Feature Image -->
+                                                <!-- Features Text -->
+                                                <div class="features-text">
+                                                    <h3 class="mb-2">Analytics</h3>
+                                                     <p>Product Based Purchase  Trends </p>
+                                                    <p>Supplier Based Purchase  Trends  </p>
+                                                    <p>Brand Based Purchase Trends</p>
+                                                    <p>Material Receipt Trends Based on Supplier</p>
+                                                    <p>Valuation of Material Receipt based on Products and Suppliers </p>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+                                        
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Single Service Area End ***** -->
+
+<!-- ***** Our Goal Area Start ***** -->
+
+        <section class="our-goal bg-overlay ptb_100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 order-2 order-lg-1 pt-4 pt-lg-0">
+                        <!-- Goal List -->
+
+
+
+                        <div class="goal-list">
+                            <ul>
+                                <li class="my-3 my-sm-0">
+                                    <!-- Goal Item -->
+                                    <div class="goal-item media icon-animation">
+                                        <!-- Feature Icon -->
+                                        <!-- <div class="feature-icon mx-auto my-4">
+                                            <i class="fab fa-artstation"></i>
+                                        </div> -->
+                                        <!-- Goal Text -->
+
+                                        <div class="goal-text media-body align-self-center pl-3 s">
+                                            <p class="text-white"><img src="{% static 'images/Icon/Frame-3.png' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Highly Customizable</p><br>
+                                            <p class="text-white"><img src="{% static 'images/Icon/Group 5.png' %}">&nbsp;&nbsp;&nbsp;Integrations with your favourite apps</p><br>
+                                            <p class="text-white"><img src="{% static 'images/Icon/Group 6.png' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Report Builder</p><br>
+                                            <p class="text-white"><img src="{% static 'images/Icon/Group 7.png' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Custom Forms</p><br>
+                                            <p class="text-white"><img src="{% static 'images/Icon/Frame-2.png' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Custom Printing Layouts</p><br>
+                                            <p class="text-white"><img src="{% static 'images/Icon/Frame-4.png' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Form Builder</p><br>
+                                            <p class="text-white"><img src="{% static 'images/Icon/Group 8.png' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Workflow Manager</p><br>
+
+
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="my-3 my-sm-0">
+                                    <!-- Goal Item -->
+                                    <div class="goal-item media icon-animation">
+                                        <!-- Feature Icon -->
+                                        <!-- <div class="feature-icon mx-auto my-4">
+                                            <i class="fab fa-github"></i>
+                                        </div> -->
+                                        <!-- Goal Text -->
+                                        <div class="goal-text media-body align-self-center pl-3">
+                                            <h3 class="text-white fw-6 pb-2"></h3>
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                     <div class="col-12 col-lg-4 order-3 order-lg-2">
+                        <!-- Goal Text -->
+                        <div class="goal-text">
+                                   <ul>
+                                <li class="my-3 my-sm-0">
+                                    <!-- Goal Item -->
+                                    <div class="goal-item media icon-animation">
+                                        <!-- Feature Icon -->
+                                        <!-- <div class="feature-icon mx-auto my-4">
+                                            <i class="fab fa-artstation"></i>
+                                        </div> -->
+                                        <!-- Goal Text -->
+                                        <div class="goal-text media-body align-self-center pl-3">
+                                            <p class="text-white"><img src="{% static 'images/Icon/Frame-5.png' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dedicated Support Manager</p><br>
+                                               <p class="text-white"><img src="{% static 'images/Icon/Frame-6.png' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trained business process consultants</p><br>
+                                                <p class="text-white"><img src="{% static 'images/Icon/XMLID 15.png' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On Cloud and on site Deployment Options</p><br>
+                                                <p class="text-white"><img src="{% static 'images/Icon/XMLID 16.png' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data Security</p><br>
+                                                <p class="text-white"><img src="{% static 'images/Icon/Frame-7.png' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Browser</p><br>
+                                                <p class="text-white"><img src="{% static 'images/Icon/Frame-1.png' %}">&nbsp;&nbsp;&nbsp;Multi-Lingual</p><br>
+                                                <p class="text-white"><img src="{% static 'images/Icon/Frame.png' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile Friendly</p><br>
+                                                </p>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 order-1 order-lg-2">
+                        <!-- Goal Text -->
+                        <div class="goal-text">
+
+                            <h3 class="text-white mb-3" style="font-size: xx-large;">Need a quote for a project?</h3>
+                            <span class="text-uppercase text-white fw-6 mb-2">If you are here*</span>
+                            <p class="text-white my-4">To help you understand the system we are offering a 14 days free trial</p>
+                            <!-- <p class="text-white my-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p> -->
+                            <a href="#" class="btn " style="
+    background-color: #ff0000ad;" id="btnOpenForm4">Free Trial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Our Goal Area End ***** -->
+
+        <!-- ***** Branding Partner Area Start ***** -->
+        <section class="branding-partner-area ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <!-- <strong class="text-uppercase color-primary">Branding partners</strong> -->
+                            <h2>Trusted by companies</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="branding-slider owl-carousel">
+                            <!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/XS-logo.png' %}" alt="">
+                            </div>
+                            <!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/indian-silks.png' %}" alt="">
+                            </div>
+                            <!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/birdtravels.png' %}" alt="">
+                            </div>
+                            <!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-01.png' %}" alt="">
+                            </div>
+                            <!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-02.png' %}" alt="">
+                            </div>
+                            <!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-03.png' %}" alt="">
+                            </div>
+                            <!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-04.png' %}" alt="">
+                            </div>
+                            <!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-05.png' %}" alt="">
+                            </div>
+                            <!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-06.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-07.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-08.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-09.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-10.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-11.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-12.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-13.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-14.png' %}" alt="">
+                            </div>
+                            <!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-15.png' %}" alt="">
+                            </div>
+                            <!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-16.png' %}" alt="">
+                            </div>
+                            <!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-17.png' %}" alt="">
+                            </div>
+                            <!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-18.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-21.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-20.png' %}" alt="">
+                            </div>
+                            <!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-22.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-23.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-24.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-25.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-26.png' %}" alt="">
+                            </div><!-- Single Brand -->
+
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-28.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-29.png' %}" alt="">
+                            </div><!-- Single Brand -->
+                            <div class="single-brand p-3 m-2">
+                                <img src="{% static 'assets2/img/brand-logo/logo-30.png' %}" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Branding Partner Area End ***** -->
+                       
+<style type="text/css">
+  @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+
+.form-popup-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.form-popup-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 110, 141, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  overflow-y: auto;
+  z-index: 10000;
+}
+.form-popup-bg.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.form-container {
+  background-color: #2d3638;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 40px;
+  color: #fff;
+}
+.close-button {
+  background: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: solid 1px #fff;
+}
+.form-popup-bg:before {
+  content: '';
+  background-color: #fff;
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+</style>
+
+<!-- partial:index.partial.html -->
+
+
+
+        <!--========= Pricing Table Area Start ==========-->
+        <div class="pricing-table-area section-space--pb_100 bg-gradient">
+            <div class="pricing-table-title-area position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title-wrapper text-center section-space--mb_60 wow move-up">
+                                <h6 class="section-sub-title mb-20">Pricing and plan</h6>
+                                <h3 class="section-title">14 Days free trial <span class="text-color-primary">all IT services.</span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-table-content-area">
+                <div class="container">
+                    <div class="row pricing-table-one">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4 pricing-table wow move-up">
+                            <div class="pricing-table__inner">
+                                <div class="pricing-table__header">
+                                    <h6 class="sub-title">Silver</h6>
+                                    <div class="pricing-table__image">
+                                        <img src="{% static 'images\icons\mitech-pricing-box-icon-01-90x90.png' %}" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="pricing-table__price-wrap">
+                                        <h6 class="currency">₹</h6>
+                                        <h6 class="price">1200</h6>
+                                        <h6 class="period">/Users per month</h6>
+                                    </div>
+                                </div>
+                                <div class="pricing-table__body">
+                                    <div class="pricing-table__footer" >
+                                        <a href="#" class="ht-btn ht-btn-md ht-btn--outline" id="btnOpenForm">Start free trial</a>
+                                    </div>
+
+
+
+
+                                    <ul class="pricing-table__list text-left">
+                                        <li>All Modules</li>
+                                        <li>No minimum users required</li>
+                                        <li>Hosting Include</li>
+                                        <li>8 Hours onboard/Training</li>
+                                        <li>Standard support during business hours</li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="pricing-table__list text-left">
+                                        <li>Single Company setup</li>
+                                        <li>Modules : <br>Accounting & Financial Management
+                                        	<br>Asset Management
+                                        	<br>CRM
+                                        	<br>Human Resource Management
+                                        	<br>Procurement
+                                        	<br>Production
+                                        	<br>Project Management
+                                        	<br>Selling
+                                        	<br>Stock & Inventory
+                                            <br>Support
+                                        </li>
+                                        <li>Multiple Reports,Print Formats</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4 pricing-table pricing-table--popular wow move-up">
+                            <div class="pricing-table__inner">
+                                <div class="pricing-table__feature-mark">
+                                    <span>Popular Choice</span>
+                                </div>
+                                <div class="pricing-table__header">
+                                    <h6 class="sub-title">Gold</h6>
+                                    <div class="pricing-table__image">
+                                        <img src="{% static 'images\icons\mitech-pricing-box-icon-02-88x88.png' %}" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="pricing-table__price-wrap">
+                                        <h6 class="currency">₹</h6>
+                                        <h6 class="price">1000</h6>
+                                        <h6 class="period">/Users per month</h6>
+                                    </div>
+                                </div>
+                                <div class="pricing-table__body">
+                                    <div class="pricing-table__footer">
+                                        <a href="#" class="ht-btn ht-btn-md ht-btn--outline" id="btnOpenForm1">Start free trial</a>
+                                    </div>
+                                    <ul class="pricing-table__list text-left">
+                                        <li>All Modules</li>
+                                        <li>Minimum 10 users required</li>
+                                        <li>Hosting Include</li>
+                                        <li>8 Hours onboard/Training</li>
+                                        <li>Standard support during business hours</li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="pricing-table__list text-left">
+                                        <li>Multiple Company setup</li>
+                                        <li>Modules : <br>Accounting & Financial Management
+                                        	<br>Asset Management
+                                        	<br>CRM
+                                        	<br>Human Resource Management
+                                        	<br>Procurement
+                                        	<br>Production
+                                        	<br>Project Management
+                                        	<br>Selling
+                                        	<br>Stock & Inventory
+                                            <br>Support
+                                        </li>
+                                        <li>Multiple Reports,Print Formats</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4 pricing-table wow move-up">
+                            <div class="pricing-table__inner">
+                                <div class="pricing-table__header">
+                                    <h6 class="sub-title">Enterprise</h6>
+                                    <div class="pricing-table__image">
+                                        <img src="{% static 'images\icons\mitech-pricing-box-icon-03-90x90.png' %}" class="img-fluid" alt="">
+                                    </div>
+<!--                                     <div class="pricing-table__price-wrap">
+                                        <h6 class="currency">$</h6>
+                                        <h6 class="price">29</h6>
+                                        <h6 class="period">/mo</h6>
+                                    </div> -->
+                                </div>
+                                <br>
+                                <br>
+                                <div class="pricing-table__body">
+                                    <div class="pricing-table__footer">
+                                        <a href="#" class="ht-btn ht-btn-md ht-btn--outline" id="btnOpenForm2">Contact Sales</a>
+                                    </div>
+                                    <ul class="pricing-table__list text-left" style="font-size: x-large;">
+                                        For enterprise & self hosting Please get in touch with the sales team.
+<!--                                         <li>Power And Predictive Dialing </li>
+                                        <li>Quality &amp; Customer Experience </li> -->
+                                    </ul>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--========= Pricing Table Area End ==========-->
+
+<div class="form-popup-bg">
+  <div class="form-container">
+    <button id="btnCloseForm" class="close-button">X</button>
+    <h1>Contact Us</h1>
+    <form  method="post">
+                                    {% csrf_token %}
+                                    <div class="contact-form">
+                                        <div class="contact-input">
+                                            <div class="contact-inner">
+                                                {{ form.name.label_tag }}
+                                                {{ form.name.errors }}
+                                                {{ form.name }}
+                                            </div>
+                                            <div class="contact-inner">
+                                                {{ form.email.label_tag }}
+                                                {{ form.email.errors }}
+                                                {{ form.email }}
+                                            </div>
+                                        </div>
+                                        <div class="contact-inner">
+                                            {{ form.subject.label_tag }}
+                                            {{ form.subject.errors }}
+                                            {{ form.subject }}
+                                        </div>
+                                        <div class="contact-inner contact-message">
+                                            {{ form.message.label_tag }}
+                                            {{ form.message.errors }}
+                                            {{ form.message }}
+                                        </div>
+                                        <div class="submit-btn mt-20">
+                                            <button type="submit" name="save" class="ht-btn ht-btn-md">Send message </button>
+<!--                                            <button class="ht-btn ht-btn-md" type="submit">Send message</button>-->
+<!--                                            <p class="form-messege">-->
+<!--                                                <div id="success_lead" class="alert alert-success alert-dismissible" style="display:none; margin-left:0px;">-->
+<!--                                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>-->
+<!--                                  <strong>Success!</strong> Thank you For Contacting Us. We will reach back to you shortly-->
+<!--                                </div>-->
+<!--                                            </p>-->
+
+                                        </div>
+
+                                    </div>
+
+                                </form>
+  </div>
+</div>
+                                     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+<script type="text/javascript">
+  function closeForm() {
+  $('.form-popup-bg').removeClass('is-visible');
+}
+
+$(document).ready(function($) {
+
+  /* Contact Form Interactions */
+  $('#btnOpenForm').on('click', function(event) {
+    event.preventDefault();
+
+    $('.form-popup-bg').addClass('is-visible');
+  });
+
+    //close popup when clicking x or off popup
+  $('.form-popup-bg').on('click', function(event) {
+    if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+      event.preventDefault();
+      $(this).removeClass('is-visible');
+    }
+  });
+
+
+
+  });
+</script>
+
+
+<script type="text/javascript">
+  function closeForm() {
+  $('.form-popup-bg').removeClass('is-visible');
+}
+
+$(document).ready(function($) {
+
+  /* Contact Form Interactions */
+  $('#btnOpenForm4').on('click', function(event) {
+    event.preventDefault();
+
+    $('.form-popup-bg').addClass('is-visible');
+  });
+
+    //close popup when clicking x or off popup
+  $('.form-popup-bg').on('click', function(event) {
+    if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+      event.preventDefault();
+      $(this).removeClass('is-visible');
+    }
+  });
+
+
+
+  });
+</script>
+
+
+<script type="text/javascript">
+  function closeForm() {
+  $('.form-popup-bg').removeClass('is-visible');
+}
+
+$(document).ready(function($) {
+
+  /* Contact Form Interactions */
+  $('#btnOpenForm1').on('click', function(event) {
+    event.preventDefault();
+
+    $('.form-popup-bg').addClass('is-visible');
+  });
+
+    //close popup when clicking x or off popup
+  $('.form-popup-bg').on('click', function(event) {
+    if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+      event.preventDefault();
+      $(this).removeClass('is-visible');
+    }
+  });
+
+
+
+  });
+</script>
+
+
+<script type="text/javascript">
+  function closeForm() {
+  $('.form-popup-bg').removeClass('is-visible');
+}
+
+$(document).ready(function($) {
+
+  /* Contact Form Interactions */
+  $('#btnOpenForm2').on('click', function(event) {
+    event.preventDefault();
+
+    $('.form-popup-bg').addClass('is-visible');
+  });
+
+    //close popup when clicking x or off popup
+  $('.form-popup-bg').on('click', function(event) {
+    if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+      event.preventDefault();
+      $(this).removeClass('is-visible');
+    }
+  });
+
+
+
+  });
+</script>
+
+
+    <!-- jQuery(necessary for all JavaScript plugins) -->
+    <script src="{% static 'assets2/js/jquery/jquery-3.3.1.min.js' %}"></script>
+
+    <!-- Bootstrap js -->
+    <script src="{% static 'assets2/js/bootstrap/popper.min.js' %}"></script>
+    <script src="{% static 'assets2/js/bootstrap/bootstrap.min.js' %}"></script>
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+{% endblock %}

@@ -1,0 +1,193 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <!-- Title of Website -->
+  <title>KINETICX &ndash; Coming Soon Page</title>
+
+  <meta name="description"
+        content="Coming Soon Landing Page"/>
+  <meta name="keywords"
+        content="Kounter, html theme, Coming Soon Landing Page, Coming Soon Landing Page template, html landing page, one page, responsive landing page"/>
+  <meta name="author" content="Egotype">
+
+  <!-- Favicon -->
+ 
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{% static 'css_comingsoon/plugins/bootstrap_comingsoon.min.css' %}">
+
+  <!-- Font Icons -->
+  <link rel="stylesheet"
+        href="{% static 'css_comingsoon/icons/font-awesome_comingsoon.css' %}">
+  <link rel="stylesheet"
+        href="{% static 'css_comingsoon/icons/linea_comingsoon.css' %}">
+
+  <!-- Google Fonts -->
+  <!-- <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700"> -->
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="{% static 'css_comingsoon/plugins/loaders_comingsoon.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css_comingsoon/plugins/photoswipe_comingsoon.css' %}">
+  <link rel="stylesheet" href="{% static 'css_comingsoon/icons/photoswipe/icons_comingsoon.css' %}">
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css_comingsoon/style_comingsoon.css' %}">
+
+  <!-- Responsive CSS -->
+  <link href="{% static 'css_comingsoon/responsive_comingsoon.css' %}" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body data-spy="scroll" data-target=".scrollspy" class="bg-dark">
+
+<!-- Preloader  -->
+<div class="loader bg-dark">
+  <div class="loader-inner ball-scale-ripple-multiple ball-scale-ripple-multiple-color">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- /End Preloader  -->
+
+
+<div id="page">
+
+  <!-- ============================
+       BG & Overlays
+  ================================= -->
+
+  <!-- Particle BG -->
+  <div id="page-particle" class="section-overlay" data-line-color="#999"  data-dot-color="#999">
+  </div>
+  <!-- /End Particle BG -->
+
+  <!-- Overlay BG -->
+  <div class="section-overlay bg-black overlay-opacity"></div>
+  <!-- /End Overlay BG -->
+
+
+  <!-- ============================
+       Header Navigation
+  ================================= -->
+
+  
+
+  <div class="container-fluid">
+    <div class="row">
+
+
+      <!-- ============================
+           Info
+      ================================= -->
+
+      <div id="info" class="col-md-12 text-white text-center page-info col-transform">
+        <div class="vert-middle">
+          <div class="reveal scale-out">
+
+            <!-- Logo -->
+            <div class="p-t-b-15">
+              <img src="{% static 'images_comingsoon/logo.png' %}"alt="">
+            </div>
+            <!-- /End Logo -->
+
+            <div class="p-t-b-15">
+              <!-- Headline & Description -->
+              <h1>WE'RE COMING SOON!</h1>
+
+              <p>We are working hard to bring you new experience!
+              </p>
+              <!-- /End Headline & Description -->
+            </div>
+            <!-- Arrow -->
+            <!-- <div class="p-t-b-20">
+              <i class="icon icon-sm icon-arrows-slim-down-dashed"></i>
+            </div> -->
+            <!-- /End Arrow -->
+
+            <!-- Buttons -->
+            <div class="p-t-b-15 btn-row">
+             <a href="{% url 'page_about_us' %}">
+                 <button type="button" class="btn btn-primary">About Us</button>
+              </a>
+              <a  href="{% url 'sending_mail' %}">
+<button type="button" class="btn btn-primary"> Contact Us</button>
+              </a><br><br>
+              <a  href="{% url 'home' %}">
+<button type="button" class="btn btn-primary">Back to Home</button>
+              </a>
+
+            </div>
+            <!-- /End Buttons -->
+
+            <!-- Social Media Links -->
+           <!--  <div class="p-t-b-30">
+              <p>
+                <a href="https://web.facebook.com/KineticXtech/" class="link-white"><i
+                    class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/KineticxT" class="link-white"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+
+              </p>
+            </div> -->
+            <!-- Social Media Links -->
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ============================
+           Content
+      ================================= -->
+
+      <div id="content" class="page-content col-md-6 text-center bg-white-09">
+
+        <!-- ----------------------------
+             About Section
+        --------------------------------- -->
+
+        
+
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- /#page -->
+<div id="photoswipe"></div>
+
+<!-- Scripts -->
+<script src="{% static 'js_comingsoon/plugins/jquery1.11.2_comingsoon.min.js' %}"></script>
+<script src="{% static 'js_comingsoon/plugins/bootstrap_comingsoon.min.js' %}"></script>
+<script src="{% static 'js_comingsoon/plugins/scrollreveal_comingsoon.min.js' %}"></script>
+<script src="{% static 'js_comingsoon/plugins/contact-form_comingsoon.js' %}"></script>
+<script src="{% static 'js_comingsoon/plugins/newsletter-form_comingsoon.js' %}"></script>
+<script src="{% static 'js_comingsoon/plugins/jquery.ajaxchimp_comingsoon.min.js' %}"></script>
+<script src="{% static 'js_comingsoon/plugins/photoswipe/photoswipe_comingsoon.min.js' %}"></script>
+<script src="{% static 'js_comingsoon/plugins/photoswipe/photoswipe-ui-default_comingsoon.min.js' %}"></script>
+<script src="{% static 'js_comingsoon/plugins/jquery.countdown_comingsoon.min.js' %}"></script>
+<script src="{% static 'js_comingsoon/plugins/jquery.particleground_comingsoon.min.js' %}"></script>
+
+<!-- Custom Script -->
+<script src="{% static 'js_comingsoon/custom_comingsoon.js' %}"></script>
+
+
+</body>
+</html>

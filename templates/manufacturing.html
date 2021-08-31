@@ -1,0 +1,531 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KineticX Tech Solutions</title>
+
+<meta name="author" content="abusinesstheme">
+<meta name="description" content="Voyo One is a multipurpose HTML Template developed with the the latest HTML5 and CSS3 technologies. It can be perfectly fit for any corporate, e-commerce, business, agency or individual website.">
+
+<script src="/cdn-cgi/apps/head/ZY9A0AAlwdpt2cO4aZb21XgSNxg.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700|Raleway:300,400,500,600">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'assets/inc/rs-plugin/css/settings.css' %}" media="screen">
+
+<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+<link rel="shortcut icon" href="{% static ' assets/images/favicon.ico' %}">
+<link rel="apple-touch-icon" href="{% static 'assets/images/apple-touch-icon.png' %}">
+<link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/images/apple-touch-icon-72x72.png' %}">
+<link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/images/apple-touch-icon-114x114.png' %}">
+<link rel="apple-touch-icon" sizes="144x144" href="{% static 'assets/images/apple-touch-icon-144x144.png' %}">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100836059-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-100836059-1');
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+
+<header class="header-wrapper top-border">
+<div class="main-header">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-2">
+<a href="{% url 'home' %}" class="logo"><img src="{% static 'assets/images/demo/KX___-01.png' %}" alt="Logo Voyo One"></a>
+<div class=" top-border-2"></div>
+</div>
+<div class="col-sm-12 col-md-10">
+<nav class="navbar-right">
+<ul class="menu">
+
+<li class="toggle-menu">
+<span class="title">Menu</span>
+<span class="icon"><i></i><i></i><i></i></span>
+</li>
+<li class="first"><a href="{% url 'home' %}" data-hover="Home">Home</a></li>
+<li class="first">
+<a href="{% url 'page_about_us' %}" data-hover="About">About</a>
+</li>
+
+<li>
+<a href="{% url 'blog_grid_sidebar' %}" data-hover="Blog">Blog</a>
+
+
+<li class="first">
+<a href="#" data-hover="Products">Products</a>
+<ul class="submenu">
+<li>
+<a href="{% url 'erp' %}">Enterprise Resource Planning</a>
+
+</li>
+<li><a href="{% url 'CRM' %}">Customer Relationship Management</a>
+<ul class="submenu">
+<li><a href="{% url 'CRM' %}#section1">Sales</a></li>
+<li><a href="{% url 'CRM' %}#section2">Marketing</a></li>
+<li><a href="{% url 'CRM' %}#section3">Support</a></li>
+</ul>
+</li>
+<li><a href="{% url 'HRMS' %}">HR Employee Management System</a>
+<ul class="submenu">
+<li><a href="{% url 'HRMS' %}#section1">Recruitment</a></li>
+<li><a href="{% url 'HRMS' %}#section2">Employee Management</a></li>
+<li><a href="{% url 'HRMS' %}#section3">Employee Training & Growth</a></li>
+<li><a href="{% url 'HRMS' %}#section4">Payroll</a></li>
+</ul>
+</li>
+<li><a href="{% url 'manufacturing' %}">Manufacturing Production</a>
+<ul class="submenu">
+<li><a href="{% url 'manufacturing' %}#section1">Production Planning</a></li>
+<li><a href="{% url 'manufacturing' %}#section2">Operations & Workstation management</a></li>
+<li><a href="{% url 'manufacturing' %}#section3">Quality Management</a></li>
+<li><a href="{% url 'manufacturing' %}#section4">Inventory & Scrap Management</a></li>
+</ul>
+</li>
+<li><a href="{% url 'pos' %}">Point Of Sale</a>
+
+</li>
+<li><a href="{% url 'inventory' %}">Inventory & Warehouse Management</a>
+<ul class="submenu">
+<li><a href="{% url 'inventory' %}#section1">Store Management</a></li>
+<li><a href="{% url 'inventory' %}#section2">Procurement</a></li>
+<li><a href="{% url 'inventory' %}#section3">Warehouse Management</a></li>
+</ul>
+</li>
+<li><a href="{% url 'pms' %}">Project Management System</a>
+
+</li>
+</ul>
+</li>
+</li>
+
+
+
+<li>
+<a href="#" data-hover="Services">Services</a>
+<ul class="submenu">
+<li>
+<a href="{% url 'consulting' %}">Consulting</a>
+
+</li>
+<li>
+<a href="{% url 'page_contact' %}">Process Implementation</a>
+
+</li>
+<li><a href="{% url 'page_faq' %}">Support Services</a></li>
+<li><a href="{% url 'page_contact' %}">Data Center Services</a></li>
+<li><a href="{% url 'page_contact' %}">Traning Services</a></li>
+</ul>
+</li>
+
+<li>
+<a href="{% url 'page_faq' %}" data-hover="Support">Support</a>
+</li>
+<li>
+<a href="{% url 'page_contact' %}" data-hover="Contact">Contact</a>
+</li>
+
+</ul>
+</nav>
+ </div>
+</div>
+</div>
+</div>
+</header>
+
+<p class="main_heading"><b><h1 style="text-align:center;">MANUFACTURING</h1></b></p>
+
+<p style="text-align:center;"><font color="black" style="font-size: 20px;" style=" font-family: "Courier New;" >Streamline manufacturing operations by monitoring, controlling, and optimising your production processes.</font></p>
+
+<section class="crm_sec">
+<div class="container">
+<div class="row mt20">
+<div class="col-sm-3 xs-box2 br-box">
+<div class="box-content">
+<a href="#section1" class="logo"><img src="{% static 'assets/images/demo/m1.png' %}" alt="Logo Voyo One"></a>
+<h3>PRODUCTION PLANNING</h3>
+<p style="margin-bottom: 94px;">Helps you to utilize the resource allocation of activities of employees, materials and production capacity, in order to serve different custom.</p>
+<a href="#section1" class="read-more">read more</a>
+</div>
+</div>
+<div class="col-sm-3 xs-box2 br-box">
+<div class="box-content">
+<a href="#section2" class="logo"><img src="{% static 'assets/images/demo/Employee Management.png' %}" alt="Logo Voyo One"></a>
+<h3 style="font-size: 16PX;">OPERATIONS & WORKSTATION MANAGEMENT</h3>
+<p>Responsible for managing the process of the creation of goods and services. It involves planning, organizing, coordinating, and controlling all the resources needed to produce a company's goods and services</p>
+<a href="#section2" class="read-more">read more</a>
+</div>
+</div>
+<div class="col-sm-3 xs-box2 br-box">
+<div class="box-content">
+<a href="#section3" class="logo"><img src="{% static 'assets/images/demo/m3.png' %}" alt="Logo Voyo One"></a>
+<h3>QUALITY MANAGEMENT</h3>
+<p>overseeing all activities and tasks needed to maintain a desired level of excellence. This includes the determination of a quality policy, creating and implementing quality planning and assurance, and quality control and quality improvement.</p>
+<a href="#section3" class="read-more">read more</a>
+</div>
+</div>
+<div class="col-sm-3 xs-box2 br-box">
+<div class="box-content">
+<a href="#section4" class="logo"><img src="{% static 'assets/images/demo/m4.png' %}" alt="Logo Voyo One"></a>
+<h3>INVENTORY MANAGEMENT</h3>
+<p>supervision of non-capitalized assets (inventory) and stock items. A component of supply chain management, inventory management supervises the flow of goods from manufacturers to warehouses and from these facilities to point of sale.</p>
+<a href="#section4" class="read-more">read more</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section-3 section-gray">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-6 sm-box2">
+<div class="box-content text-left">
+<h2 class="section-title text-left st2 mb30">What else do we offer</h2>
+<p>BUSINESSX  is one of the highly trusted software and is often praised for its note-worthy qualities such as flexibility, extensibility, scalability, usability, robustness, great security features, reliability and more. Our wide range of software systems cater to all the business working scenarios and make the process more efficient and effective therefore helping your business to grow and profits to multiply.
+</p>
+<ul class="feature-list mb30">
+<li><i class="fa fa-check"></i> ERP Software </li>
+<li><i class="fa fa-check"></i> HRMS Software </li>
+<li><i class="fa fa-check"></i> Project Management Software </li>
+<li><i class="fa fa-check"></i> Retail POS</li>
+<li><i class="fa fa-check"></i> CRM</li>
+<li><i class="fa fa-check"></i> Web Development</li>
+<li><i class="fa fa-check"></i> App Development</li>
+<li><i class="fa fa-check"></i> Business Process Management &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Consulting </li>
+</ul>
+</div>
+</div>
+<div class="col-sm-12 col-md-6">
+<div class="text-center">
+<img src="{% static 'assets/images/demo/manufacturing123.jpg' %}" alt="showcase" class="responsive-img" style="height: 410px;">
+</div>
+</div>
+</div>
+</div>
+<div class="main" id="section1"></div>
+</section>
+
+
+<section class="section crm_sec">
+<div class="container">
+<div class="row mb30">
+<h2><B>PRODUCTION PLANNING</B></h2>
+<hr>	
+<div class="col-sm-2 text-center xs-box">
+<img src="{% static 'assets/images/demo/PRoduction-Planning-1.png' %}" height="70px;" width="70px;">
+</div>
+<div class="col-sm-10">
+<div class="text-careers">
+<h3 class="box-title">Production Planning</h3>
+<p>Plan your daily, weekly or monthly production, Manage production schedules and calendars. Automatically create production orders and material requests for planned production.</p>
+</div>
+</div>
+</div>
+<div class="row mb30">
+<div class="col-sm-2 text-center xs-box ">
+<img src="{% static 'assets/images/demo/PRoduction Planning (1).png' %}"height="70px;" width="70px;">
+</div>
+<div class="col-sm-10 ">
+<div class="text-careers">
+<h3 class="box-title">Production order</h3>
+<p>Create detailed production orders and track status of ongoing production in real time.</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-2 text-center xs-box">
+<img src="{% static 'assets/images/demo/pro3.png' %}"height="70px;" width="70px;">
+</div>
+<div class="main" id="">
+<div class="col-sm-10">
+<div class="text-careers">
+<h3 class="box-title">Bill of Material (BOM)</h3>
+<p>Create multi levels BOM’s including BOM’s for sub-assemblies. Pre define production formulas, raw material requirement and keep a track of raw material consumed during a specific production run.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row mb30">
+<div class="col-sm-2 text-center xs-box ">
+<img src="{% static 'assets/images/demo/support2 (1).png' %}"height="70px;" width="70px;">
+</div>
+<div class="col-sm-10 ">
+<div class="text-careers">
+<h3 class="box-title">Material Requests</h3>
+<p>Create auto material requests depending upon items required vs item shortage for a particular production order.</p>
+</div>
+</div>
+<div class="main" id="section2"></div>
+</div></div>
+
+</section>
+</div>
+
+
+<section class="section crm_sec">
+<div class="container">
+<div class="row mb30">
+<h2><B>OPERATIONS & WORKSTATION MANAGEMENT</B></h2>
+<hr>	
+<div class="col-sm-2 text-center xs-box">
+<img src="{% static 'assets/images/demo/PRoduction11.png' %}" height="70px;" width="70px;">
+</div>
+<div class="col-sm-10">
+<div class="text-careers">
+<h3 class="box-title">Operations</h3>
+<p>Define operating hours, operating team, and operation schedules to have better visibility in production department.</p>
+</div>
+</div>
+</div>
+<div class="row mb30">
+<div class="col-sm-2 text-center xs-box">
+<img src="{% static 'assets/images/demo/PRoduction12.png' %}" height="70px;" width="70px;">
+</div>
+<div class="col-sm-10 ">
+<div class="text-careers">
+<h3 class="box-title">Workstation</h3>
+<p>Manage your production workstations using Businessx workstation management tools.</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-2 text-center xs-box">
+<img src="{% static 'assets/images/demo/PRoduction Plan.png' %}" height="70px;" width="70px;">
+</div>
+<div class="col-sm-10">
+<div class="text-careers">
+<h3 class="box-title">Workstation Maintenance and Repair</h3>
+<p>Define maintenance schedules and create repair logs for your machinery</p>
+</div>
+</div>
+<div class="main" id="section3"></div>
+</div>
+</div>
+</section>
+
+
+<section class="section crm_sec">
+<div class="container">
+<div class="row mb30">
+<h2><B>QUALITY MANAGEMENT</B></h2>
+<hr>	
+<div class="col-sm-2 text-center xs-box ">
+<img src="{% static 'assets/images/demo/pro3.png' %}" height="70px;" width="70px;">
+</div>
+<div class="col-sm-10 ">
+<div class="text-careers">
+<h3 class="box-title">Quality Checklist</h3>
+<p>Create quality checklist with predefined parameters for your finished, semi finished goods and raw materials.</p>
+</div>
+</div>
+</div>
+<div class="row mb30">
+<div class="col-sm-2 text-center xs-box ">
+<img src="{% static 'assets/images/demo/ass.png' %}" height="70px;" width="70px;">
+</div>
+<div class="col-sm-10 ">
+<div class="text-careers">
+<h3 class="box-title">Quality Sampling</h3>
+<p>Define quality sampling schedules and manage data from quality sample lab reports.</p>
+</div>
+</div>
+</div>
+<div class="main" id="section4"></div>
+<div class="row">
+<div class="col-sm-2 text-center ">
+<img src="{% static 'assets/images/demo/PRoduction Planning (3).png' %}" height="70px;" width="70px;">
+</div>
+<div class="col-sm-10">
+<div class="text-careers">
+<h3 class="box-title">Quality Report</h3>
+<p>A detailed report updated on real time basis which includes stated parameters, sample details, lab approval, acceptance criteria or rejection criteria.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section crm_sec">
+<div class="container">
+<div class="row mb30">
+<h2><B>INVENTORY MANAGEMENT</B></h2>
+<hr>	
+<div class="col-sm-2 text-center xs-box ">
+<img src="{% static 'assets/images/demo/homepl.png' %}" height="70px;" width="70px;">
+</div>
+<div class="col-sm-10 ">
+<div class="text-careers">
+<h3 class="box-title">Store Management</h3>
+<p>Create material issue receipts and inventory using BusinessX store management module</p>
+</div>
+</div>
+</div>
+<div class="row mb30">
+<div class="col-sm-2 text-center xs-box ">
+<img src="{% static 'assets/images/demo/pro3.png' %}" height="70px;" width="70px;">
+</div>
+<div class="col-sm-10 ">
+<div class="text-careers">
+<h3 class="box-title">Batch Management</h3>
+<p>Create batches, define batch specifications, expiry data and quantity</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-2 text-center ">
+<img src="{% static 'assets/images/demo/dustbinplab.png' %}" height="70px;" width="70px;">
+</div>
+<div class="col-sm-10">
+<div class="text-careers">
+<h3 class="box-title">Scrap Management</h3>
+<p>Keep a track of all the scrap generated during a production cycle.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+	<section class="section crm_sec">
+<div class="container">
+<div class="row">
+<div class="col-sm-4 xs-box2 br-box">
+<div class="box-content">
+<i class="fa fa-cloud fa-services"></i>
+<h3>Knowledgebase</h3>
+<p>Let’s dive into the experience of learning more and reaching your full potential with our support videos, E-Book and elaborative user manual.</p>
+</div>
+</div>
+<div class="col-sm-4 xs-box2 br-box">
+<div class="box-content">
+<i class="fa fa-weixin fa-services"></i>
+<h3>Forums</h3>
+<p>Every question matters, let’s discuss! Together we stand united, happy to assist our forum family.</p>
+</div>
+</div>
+<div class="col-sm-4 br-box last">
+<div class="box-content">
+<a href="{% url 'page_faq' %}"><i class="fa fa-envelope fa-services"></i></a>
+<h3>Mail Support</h3>
+<p>Our customers’ success is critical to our growth and we’re committed to succeeding together, 24×7 customer support team.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+	
+	<footer class="footer-wrapper">
+<div class="main-footer">
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, at.</p> -->
+</div>
+<div class="col-sm-8 col-xs-12 text-right">
+<a class="contact_us" href="{% url 'page_contact' %}" >Contact Us</a>
+<ul class="social-icon dark-2 rounded pull-right">
+
+<li><a href="https://www.facebook.com/KineticXtech/"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://www.instagram.com/kineticxtechsolutions/"><i class="fa fa-instagram"></i></a></li>
+<li><a href="https://twitter.com/KineticxT"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="https://www.linkedin.com/company/kinetic-x-technologies/"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<hr class="footer-hr">
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 col-md-6">
+<div class="row">
+<div class="col-sm-12 col-md-11">
+<div class="footer-widget">
+<h3 class="widget-title">About us</h3>
+<p class="mb25">KineticX tech Solutions Pvt Ltd is a software consulting and development company with a strong team of highly skilled IT experts from various fields and domains, catering to companies all across the globe.</p>
+<address class="contact-info">
+<p><i class="fa fa-map-marker box-icon color-white"></i>Plot No. 18 Patparganj Industrial Area,Delhi-110092</p>
+<p><i class="fa fa-phone box-icon color-white"></i>+(91) 9871246500,+(91) 9911455800, 0114244-0408</p>
+<i class="fa fa-cogs box-icon color-white"></i><a href="{% url 'page_faq' %}" class="Buttons" >Support</a>
+</address>
+<img src="{% static 'assets/images/icons/full-color/64px/iso1.png' %}" style="width: 200px;" alt="service">
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-12 col-md-6">
+<div class="row">
+<div class="col-sm-6">
+<div class="footer-widget">
+	<h3 class="widget-title"><a href="#">Products</a></h3>
+<ul class="footer-posts">
+<li><a href="{% url 'erp' %}"><i class="fa fa-desktop"></i>Enterprise Resource Planning</a></li>
+<li><a href="{% url 'CRM' %}"><i class="fa fa-desktop"></i>CRM</a></li>
+<li><a href="{% url 'HRMS' %}"><i class="fa fa-desktop"></i>HRMS</a></li>
+<li><a href="{{% url 'manufacturing' %}"><i class="fa fa-desktop"></i>Manufacturing Production</a></li>
+<li><a href="{% url 'pos' %}"><i class="fa fa-desktop"></i>Point Of Sale</a></li>
+<li><a href="% url 'inventory' %}"><i class="fa fa-desktop"></i>Inventory & Warehouse Mgmt</a></li>
+<li><a href="{% url 'pms' %}"><i class="fa fa-desktop"></i>Project Management System</a></li>
+
+</ul>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="footer-widget">
+<h3 class="widget-title">Photos</h3>
+<a href="{% static 'assets/images/team/karan-sir.jpg' %}"><img src="{% static 'assets/images/team/karan-sir.jpg' %}" style="height: 70px; margin-bottom: 10px;"></a>
+<a href="{% static 'assets/images/team/sanjay-sir.jpg' %}"><img src="{% static 'assets/images/team/sanjay-sir.jpg' %}"style="height: 70px;margin-bottom: 10px;"></a>
+<a href="{% static 'assets/images/team/rahul-sir.jpg' %}"><img src="{% static 'assets/images/team/rahul-sir.jpg' %}"style="height: 70px;margin-bottom: 10px;"></a>
+<a href="{% static 'assets/images/team/payal-mam.jpg' %}"><img src="{% static 'assets/images/team/payal-mam.jpg' %}"style="height: 70px;"></a>
+<a href="{% static 'assets/images/team/ritik-verma.jpg' %}"><img src="{% static 'assets/images/team/ritik-verma.jpg' %}"style="height: 70px;"></a>
+<a href="{% static 'assets/images/team/team.jpg' %}"><img src="{% static 'assets/images/team/team.jpg' %}"style="height: 70px;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sub-footer white-sub-footer">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="pull-left">
+<p><font color="black">&copy; Copyright -<b>KINETICX TECH SOLUTIONS ALL RIGHTS RESERVED</b></font></p>
+</div>
+<div class="pull-right">
+<ul class="footer-menu">
+<li><a href="{% url 'home' %}">Home</a></li>
+<li><a href="{% url 'page_contact' %}">Contact</a></li>
+<li><a href="{% url 'policy' %}">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+ </div>
+</footer>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="{% static 'assets/_demo/rs-slider.js' %}"></script>
+<div id="_include_main_plugins"></div>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+<script src="{% static 'assets/js/script.js' %}"></script>
+</body>
+</html>

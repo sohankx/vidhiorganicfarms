@@ -1,0 +1,393 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KineticX Tech Solutions</title>
+
+<meta name="author" content="abusinesstheme">
+<meta name="description" content="Voyo One is a multipurpose HTML Template developed with the the latest HTML5 and CSS3 technologies. It can be perfectly fit for any corporate, e-commerce, business, agency or individual website.">
+
+<script src="/cdn-cgi/apps/head/ZY9A0AAlwdpt2cO4aZb21XgSNxg.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700|Raleway:300,400,500,600">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'assets/inc/rs-plugin/css/settings.css' %}" media="screen">
+
+<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+<link rel="shortcut icon" href="{% static ' assets/images/favicon.ico' %}">
+<link rel="apple-touch-icon" href="{% static 'assets/images/apple-touch-icon.png' %}">
+<link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/images/apple-touch-icon-72x72.png' %}">
+<link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/images/apple-touch-icon-114x114.png' %}">
+<link rel="apple-touch-icon" sizes="144x144" href="{% static 'assets/images/apple-touch-icon-144x144.png' %}">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100836059-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-100836059-1');
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+
+<header class="header-wrapper top-border">
+<div class="main-header">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-2">
+<a href="{% url 'home' %}" class="logo"><img src="{% static 'assets/images/demo/KX___-01.png' %}" alt="Logo Voyo One"></a>
+<div class=" top-border-2"></div>
+</div>
+<div class="col-sm-12 col-md-10">
+<nav class="navbar-right">
+<ul class="menu">
+
+<li class="toggle-menu">
+<span class="title">Menu</span>
+<span class="icon"><i></i><i></i><i></i></span>
+</li>
+<li class="first"><a href="{% url 'home' %}" data-hover="Home">Home</a></li>
+<li class="first">
+<a href="{% url 'page_about_us' %}" data-hover="About">About</a>
+</li>
+
+<li>
+<a href="{% url 'blog_grid_sidebar' %}" data-hover="Blog">Blog</a>
+
+
+<li class="first">
+<a href="#" data-hover="Products">Products</a>
+<ul class="submenu">
+<li>
+<a href="{% url 'erp' %}">Enterprise Resource Planning</a>
+
+</li>
+<li><a href="{% url 'CRM' %}">Customer Relationship Management</a>
+<ul class="submenu">
+<li><a href="{% url 'CRM' %}#section1">Sales</a></li>
+<li><a href="{% url 'CRM' %}#section2">Marketing</a></li>
+<li><a href="{% url 'CRM' %}#section3">Support</a></li>
+</ul>
+</li>
+<li><a href="{% url 'HRMS' %}">HR Employee Management System</a>
+<ul class="submenu">
+<li><a href="{% url 'HRMS' %}#section1">Recruitment</a></li>
+<li><a href="{% url 'HRMS' %}#section2">Employee Management</a></li>
+<li><a href="{% url 'HRMS' %}#section3">Employee Training & Growth</a></li>
+<li><a href="{% url 'HRMS' %}#section4">Payroll</a></li>
+</ul>
+</li>
+<li><a href="{% url 'manufacturing' %}">Manufacturing Production</a>
+<ul class="submenu">
+<li><a href="{% url 'manufacturing' %}#section1">Production Planning</a></li>
+<li><a href="{% url 'manufacturing' %}#section2">Operations & Workstation management</a></li>
+<li><a href="{% url 'manufacturing' %}#section3">Quality Management</a></li>
+<li><a href="{% url 'manufacturing' %}#section4">Inventory & Scrap Management</a></li>
+</ul>
+</li>
+<li><a href="{% url 'pos' %}">Point Of Sale</a>
+
+</li>
+<li><a href="{% url 'inventory' %}">Inventory & Warehouse Management</a>
+<ul class="submenu">
+<li><a href="{% url 'inventory' %}#section1">Store Management</a></li>
+<li><a href="{% url 'inventory' %}#section2">Procurement</a></li>
+<li><a href="{% url 'inventory' %}#section3">Warehouse Management</a></li>
+</ul>
+</li>
+<li><a href="{% url 'pms' %}">Project Management System</a>
+
+</li>
+</ul>
+</li>
+</li>
+
+
+
+<li>
+<a href="#" data-hover="Services">Services</a>
+<ul class="submenu">
+<li>
+<a href="{% url 'consulting' %}">Consulting</a>
+
+</li>
+<li>
+<a href="{% url 'page_contact' %}">Process Implementation</a>
+
+</li>
+<li><a href="{% url 'page_faq' %}">Support Services</a></li>
+<li><a href="{% url 'page_contact' %}">Data Center Services</a></li>
+<li><a href="{% url 'page_contact' %}">Traning Services</a></li>
+</ul>
+</li>
+
+<li>
+<a href="{% url 'page_faq' %}" data-hover="Support">Support</a>
+</li>
+<li>
+<a href="{% url 'page_contact' %}" data-hover="Contact">Contact</a>
+</li>
+
+</ul>
+</nav>
+ </div>
+</div>
+</div>
+</div>
+</header>
+<section class="contact-section section-3 large-padding custom-bg mb0 parallax" data-bg="{% static 'assets/images/demo/s-107.jpg' %}" style="padding-top: 20px;padding-bottom: 20px;">
+<div class="bg-layer"></div>
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-5 sm-box">
+<h2 class="section-title st2 text-left mt10 mb25"></h2>
+<p class="contact-p" style="font-size: 143%;">Fill in the form and we will get back to you in two working days.</p>
+<address class="mb50">
+<p><i class="fa fa-map-marker"></i> Patparganj Industrial Area,Delhi-110092</p>
+<p><i class="fa fa-phone"></i>+(91) 9871246500,+(91) 9911455800</p>
+<p><i class="fa fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="afdcdadfdfc0dddbefcecddadcc6c1cadcdcdbc7cac2ca81ccc0c2"><font color="white">sales@kineticxtech.com</font></a></p>
+</address>
+<ul class="nav nav-tabs">
+</ul>
+</div>
+<div class="col-sm-12 col-md-6 col-md-offset-1">
+<div class="tab-content" style="margin-left: 20px;">
+<div class="tab-pane fade in active" id="tab-contact">
+<form action="/enquiry/contact_lead/" method="post" id="form_id_submit" class="contact-form" >
+
+          {% csrf_token %}
+<div id="main">
+<div class="form-group">
+<div class="glyphicon glyphicon-user">
+    <label >Name:</label>
+<input type="text" tabindex="1" id="name" name="name" value="" class="form-control"  placeholder="Name *" required style="width: 230px;">
+</div>
+	<div class="glyphicon glyphicon-envelope">
+    <label >E-mail:</label>
+<input type="email" tabindex="2" id="email" name="email" value="" class="form-control" placeholder="E-mail *" required style="width: 230px;">
+</div>
+
+</div>
+<div class="form-group">
+</div><div class="form-group">
+<div class="glyphicon glyphicon-earphone">
+    <label >Phone:</label>
+<input type="number" tabindex="3" id="phone" name="phone" value="" class="form-control" style="width: 230px;">
+</div>
+	<div class="glyphicon glyphicon-th">
+    <label >Company:</label>
+<input type="text" tabindex="3" id="company" name="company" value="" class="form-control" style="width: 230px;">
+</div>
+
+</div><div class="form-group">
+</div>
+        <div class="form-group">
+<div class="glyphicon glyphicon-comment">
+    <label >Message:</label>
+<textarea name="message" tabindex="5" cols="27" rows="4" class="form-control wpcf7-textarea"  required></textarea>
+</div>
+			<div class="glyphicon glyphicon-home">
+    <label >Address:</label>
+<textarea tabindex="5" cols="27" rows="4" id="address" name="address" value="" class="form-control"  ></textarea>
+</div>
+
+</div>
+
+
+<div class="form-group">
+</div>
+</div>
+<p>By registering, you confirm that you agree to the storing and processing of your personal data by Kineticx Tech Solutions as described in the Privacy Statement</p>
+ <p><input class="btn btn-primary" type="submit" value="Submit"  id="submit"  style="
+
+
+    width: 120px;
+    width: 120px;
+    height: 55px;"
+ ></p>
+<div id="success_lead" class="alert alert-success alert-dismissible" style="display:none; margin-left:0px;">
+                                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                  <strong>Success!</strong> Thank you For Contacting Us. We will reach back to you shortly
+                                </div>
+
+
+</form>
+
+
+</div>
+<div class="tab-pane fade" id="tab-subscribe">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+<footer class="footer-wrapper">
+<div class="main-footer">
+<div class="container">
+<div class="row">
+<div class="col-sm-8">
+
+</div>
+
+<div class="col-sm-8 col-xs-12 text-right" style="
+    margin-left: 400px;
+">
+<a class="contact_us" href="{% url 'page_contact' %}" >Contact Us</a>
+<ul class="social-icon dark-2 rounded pull-right">
+
+<li><a href="https://www.facebook.com/KineticXtech/"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://www.instagram.com/kineticxtechsolutions/"><i class="fa fa-instagram"></i></a></li>
+<li><a href="https://twitter.com/KineticxT"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="https://www.linkedin.com/company/kinetic-x-technologies/"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<hr class="footer-hr">
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 col-md-6">
+<div class="row">
+<div class="col-sm-12 col-md-11">
+<div class="footer-widget">
+<h3 class="widget-title">About us</h3>
+<p class="mb25">KineticX tech Solutions Pvt Ltd is a software consulting and development company with a strong team of highly skilled IT experts from various fields and domains, catering to companies all across the globe.</p>
+<address class="contact-info">
+<p><i class="fa fa-map-marker box-icon color-white"></i>Plot No. 18 Patparganj Industrial Area,Delhi-110092</p>
+<p><i class="fa fa-phone box-icon color-white"></i>+(91) 9871246500,+(91) 9911455800, 0114244-0408</p>
+<i class="fa fa-cogs box-icon color-white"></i><a href="{% url 'page_faq' %}" class="Buttons" >Support</a>
+</address>
+<img src="{% static 'assets/images/icons/full-color/64px/iso1.png' %}" style="width: 200px;" alt="service">
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-12 col-md-6">
+<div class="row">
+<div class="col-sm-6">
+<div class="footer-widget">
+	<h3 class="widget-title"><a href="#">Products</a></h3>
+<ul class="footer-posts">
+<li><a href="{% url 'erp' %}"><i class="fa fa-desktop"></i>Enterprise Resource Planning</a></li>
+<li><a href="{% url 'CRM' %}"><i class="fa fa-desktop"></i>CRM</a></li>
+<li><a href="{% url 'HRMS' %}"><i class="fa fa-desktop"></i>HRMS</a></li>
+<li><a href="{{% url 'manufacturing' %}"><i class="fa fa-desktop"></i>Manufacturing Production</a></li>
+<li><a href="{% url 'pos' %}"><i class="fa fa-desktop"></i>Point Of Sale</a></li>
+<li><a href="% url 'inventory' %}"><i class="fa fa-desktop"></i>Inventory & Warehouse Mgmt</a></li>
+<li><a href="{% url 'pms' %}"><i class="fa fa-desktop"></i>Project Management System</a></li>
+
+</ul>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="footer-widget">
+<h3 class="widget-title">Photos</h3>
+<a href="{% static 'assets/images/team/karan-sir.jpg' %}"><img src="{% static 'assets/images/team/karan-sir.jpg' %}" style="height: 70px; margin-bottom: 10px;"></a>
+<a href="{% static 'assets/images/team/sanjay-sir.jpg' %}"><img src="{% static 'assets/images/team/sanjay-sir.jpg' %}"style="height: 70px;margin-bottom: 10px;"></a>
+<a href="{% static 'assets/images/team/rahul-sir.jpg' %}"><img src="{% static 'assets/images/team/rahul-sir.jpg' %}"style="height: 70px;margin-bottom: 10px;"></a>
+<a href="{% static 'assets/images/team/payal-mam.jpg' %}"><img src="{% static 'assets/images/team/payal-mam.jpg' %}"style="height: 70px;"></a>
+<a href="{% static 'assets/images/team/ritik-verma.jpg' %}"><img src="{% static 'assets/images/team/ritik-verma.jpg' %}"style="height: 70px;"></a>
+<a href="{% static 'assets/images/team/team.jpg' %}"><img src="{% static 'assets/images/team/team.jpg' %}"style="height: 70px;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sub-footer white-sub-footer">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="pull-left">
+<p><font color="black">&copy; Copyright -<b>KINETICX TECH SOLUTIONS ALL RIGHTS RESERVED</b></font></p>
+</div>
+<div class="pull-right">
+<ul class="footer-menu">
+<li><a href="{% url 'home' %}">Home</a></li>
+<li><a href="{% url 'page_contact' %}">Contact</a></li>
+<li><a href="{% url 'policy' %}">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+ </div>
+</footer>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="{% static 'assets/_demo/rs-slider.js' %}"></script>
+<div id="_include_main_plugins"></div>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+<script src="{% static 'assets/js/script.js' %}"></script>
+<style>
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+<!--  box-shadow: 0 9px #999;-->
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+<script>
+    $("form").submit(function(){
+    var username = "gfgfgfg";
+
+      $.ajax({
+        url: '/about/contact_lead',
+        data: form.serialize(),
+        dataType: 'json',
+        success: function (data) {
+        console.log('response')
+        }
+      });
+});
+</script>
+<script>
+// Submit form with id function.
+var success = "{{success}}";
+if(success=='1'){
+document.getElementById("success_lead").style.display = "inline-block";
+window.location.hash = '#success_lead';
+var delay = 5000;
+setTimeout(function(){ window.location = "{% url 'free_demo' %}"; }, delay);
+}
+</script>
+</body>
+</html>
